@@ -1,0 +1,31 @@
+*{
+    margin: 10;
+    padding: 10;
+}
+.ListName{
+    list-style-image: url("https://mdn.mozillademos.org/files/11981/starsolid.gif");
+}
+.TableauEmployes{
+    color: #293ba1;
+}
+.TableauEmployes2{
+    color: #d36f12;
+}
+dt{
+    color: #ff6600;
+}
+/* Style */
+main{
+    background-color: #c2acac;
+}
+article{
+    margin: 15px;
+}
+.figureTiti{
+    width: 200px;
+    margin: 0 auto;
+}
+.mousse{
+    width: 200px;
+    margin: 0 auto;
+}

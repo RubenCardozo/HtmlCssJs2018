@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr-CH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Semantique</title>
+</head>
+<body>
+    
+        <nav>
+            <a href="itta.html">premiere</a>
+            <a href="itta.html">première aussi</a>
+            <a href="http://127.0.0.1:5500/itta.html">première encore</a>   
+        </nav>
+
+        <header>
+            <h1>Titre principale</h1>
+            <h2>Sous titre</h2>
+        </header>
+
+        <main>
+            <section>
+
+                <article>
+                    <header>
+                        <h1>-Titre de mon premier article</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ullam.</p>
+                    </header>
+
+                    <div>Contenu de l'article
+                    </div>
+
+                    <details><summary>Info suplemmentaire</summary> 
+                        Des elements supplementaires et/ou annexes à l'articles     
+                    </details>
+                    
+                </article>
+
+                <article>
+                    <header>
+                        <h1>-Tritre de mon second article</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            Soluta vel libero accusamus quis necessitatibus distinctio officia. 
+                            Vitae officiis quibusdam doloribus.</p>
+                    </header>
+                    <figure ><img class="figureTiti" title="Titi et Silvestre" src="/images/titi.jpg" alt="Image de Titi et Silvestre">
+                        <figcaption>Le chat et le canarie</figcaption>
+                    </figure>
+                </article>
+
+                <article>
+                    <b>Balise "b". Style GRAS.</b><br>
+                    <em>Balise "em" EMPHASIZE: Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eligendi quam repellendus blanditiis corrupti deserunt ratione culpa ipsam perspiciatis. 
+                        
+                    </em><br>
+                    <i>Balise "i" ITALIQUE:Lorem ipsum dolor sit amet.</i><br>
+                    <strong>Balise "strong" IMPORTANTE:</strong><br>
+                    <mark>surligné</mark><br>
+                    <ins>Balise "ins" Texte inséré</ins><br>
+                    <del>Balise "del". Le texte à été suprimé</del><br>
+                    <p>Balise "sub" et "sup" pour la math= P<sub>i</sub><sup>2</sup></p>
+
+                    <blockquote>
+                        La balise "blockquote" c'est pour le citation.<br>
+                        "Qui est joyeux d'apprendre deviendra maître un jour."<br>
+                        <cite><a href="http://www.proverbes-francais.fr/proverbes-apprendre/#qCg4UvcuZ609BzkR.99">Proverbe persan</a>
+                        </cite>
+                    
+                    <p>Balise "time" utilisé dans les dates: Le <time datetime="10-05-25">25 mai 10.</time></p>
+                </blockquote>
+
+                <div itemscope itemtype="https://schema.org/Recipe">
+
+                    <h1 itempro="name">Mousse au chocolate</h1>
+
+                    <div itempro="image"><img class="mousse" 
+                        src="https://image.afcdn.com/recipe/20141003/33859_w1024h768c1cx200cy142.jpg">
+                    </div>
+
+                    Temps prep: <time datetime="PT10M" itemprop="preptime">10 min</time><br>
+
+                    <p>Ingredients</p>
+                 <span itemprop="recipeIngredient">4 oefs</span><br>
+                 <span itemprop="recipeIngredient">250 Chocolat</span><br>
+                 <div intemprop="recipeInstructions">              
+                    1. Casser les oufs<br>
+                    2. Les battres <br>
+                    3. Les integrér au chocolat fondu <br>
+                </div>
+                </article>
+
+                <article>
+                    <h3>Tags pour les dévelopeurs</h3>
+                    <p>&ltpre&gt &ltcode&gt &ltsamp&gt</p>
+                    
+                    <pre>
+                                        ceci est 
+                                de texte 
+                            aligné par 
+                        le concepteur</pre>
+
+                    <code>
+                        var e =10;<br>
+                        for (i=1; i<10;i++){<br>
+                            alert("titi");<br>
+                    </code>
+                    
+                </article>
+                <samp>
+                    c:\Hello World sur la console
+                </samp>
+                <p>------------------------------------------</p>
+                <aside>
+                    <p><em>ASIDE:</em> Sans rapport avec les articles</p>
+                </aside><br>
+
+                <video width="300" height="200" controls>
+                    <source src="/video/video.mp4" type="video/mp4">
+                    <source src="/video/video.webm" type="video/webm">
+                        Video imposible de lire
+                </video>
+                <audio  controls>
+                    <source src="/audio/pf.mp3" type="audio/mp3">
+                    <source src="/audio/pf.ogg" type="audio/ogg">  
+                </audio>
+                <progress value="10" max="100"></progress>
+            </section>
+        </main>
+            <footer>
+                Merci pour être avec nous...
+                <address>Envoye-moi un <a href="mailto:ruben@cardozo.ch"> mail</a></address>
+            </footer>
+        
+</body>
+</html>

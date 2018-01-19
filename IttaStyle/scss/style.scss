@@ -1,0 +1,109 @@
+///Style principale en scss.
+///@include _variables;
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+body{
+    background: #e9d774;
+}
+
+.rouge{
+    color: #e20a0a;
+    background-color: #6961e2;
+    width: 50%;
+    height: 200px;
+    div{
+        color: #fcf9f9;
+    }
+}
+.textStyle{
+    background: #fcf9f9;
+    letter-spacing: 2px;
+    word-spacing:10px;
+    white-space: pre-wrap;
+    text-indent: 50px;
+
+}
+.textStyle2{
+    background: #fcf9f9;
+    letter-spacing: 2px;
+    word-spacing:10px;
+    white-space: normal;
+    line-height: 150%;
+}
+.textStyle3{
+    background: #fcf9f9;
+    letter-spacing: 2px;
+    word-spacing:10px;
+    white-space: normal;
+    line-height: 150%;
+    text-align: justify;
+    
+    a{
+        text-decoration: none;
+    }
+}
+.textStyle4{
+    background: #fcf9f9;
+    letter-spacing: 2px;
+    word-spacing:10px;
+    white-space: normal;
+    line-height: 150%;
+    text-align: justify;
+    text-transform: capitalize;
+}
+.textStyle5{
+    font-size: 20px;
+    color:#2b0786;
+    background-color: #fcf9f9;
+    white-space: normal;
+    text-shadow: 2px 1px 2px lighten($color: #132f50, $amount: 20)  ; 
+}
+.textStyle6{
+    font-size: 20px;
+    background-color: #fcf9f9;
+    white-space: nowrap;
+    width: 35%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    &:hover{
+        overflow: visible;
+    }
+}
+.police1{  
+    background-color: #fcf9f9;
+    font-family:'Algerian','Tahoma','Times New Roman', serif; 
+}
+.police2{
+    background-color: #fcf9f9;
+    font-family:'Geneva',Arial, sans-serif; 
+}
+.police3{
+    background-color: #fcf9f9;
+    font-family:'Lucida Console','Monaco',monospace; 
+}
+.police4{
+    background-color: #fcf9f9;
+    font-family:'Arial';
+    font-style: italic;
+    font-weight: bold;
+    
+}
+.police5{
+    background-color: #fcf9f9;
+    font-family:Courier New, Courier, monospace, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: x-large;
+}
+.police6{
+    background-color: #fcf9f9;
+    font-family:'Anton', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    font-style: oblique;
+}
