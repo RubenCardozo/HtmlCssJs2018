@@ -1,0 +1,34 @@
+@import './reset';
+.main{
+    background-color: #f3e9cc;
+    width: 200px;
+    position: relative;
+    margin: 0 auto;
+    border-style: solid;
+}
+div,p{
+    color: blue;
+}
+
+div>p{
+    color:#ee0fee;
+}
+div>div>section{
+    color:purple;
+}
+
+.troisieme{
+    color: pink;
+}
+
+#quatrieme{
+    color: red;
+    text-decoration: underline;
+}
+
+.sixieme{
+    color: orange;
+    text-decoration: underline;
+}
+
+

@@ -96,4 +96,25 @@ body {
   font-weight: 400;
   font-style: oblique; }
 
+.fa {
+  width: 300px;
+  position: relative;
+  margin: o, auto; }
+
+.police7 {
+  float: left;
+  background-color: #fcf9f9;
+  word-break: break-all;
+  width: 100px; }
+  .police7 p {
+    font: bold; }
+
+.police8 {
+  float: right;
+  background-color: #fcf9f9;
+  word-break: break-word;
+  width: 100px; }
+  .police8 p {
+    font: bolder; }
+
 /*# sourceMappingURL=style.css.map */
