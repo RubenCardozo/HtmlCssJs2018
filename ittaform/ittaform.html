@@ -10,16 +10,21 @@
 <body>
     <main>
         <div class="firstForm">
+            <div>Formulaire de saisie</div>
+            <p>Ceci est un paragraphe qui va faire plusiers. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed officia necessitatibus pariatur cupiditate placeat, impedit hic blanditiis, dignissimos culpa eius perferendis rem enim a modi cumque sit illum dolores ducimus?</lignes> </p>
             <h2>Premier form</h2>
             <form method="GET" >
                 <label for="nom">Nom: </label>
-                <input type="text" name="nom" id="nom" required pattern="([1-9]|1\d|20)"><br>
+                <input type="text" name="nom" pattern="([1-9]|1\d|20)"><br>
+
+                <label for="nom">Desactivé: </label>
+                <input type="text" disabled><br>
 
                 <label for="prenom">Prenom: </label>
                 <input type="text" name="prenom"id="prenom" readonly value="test"><br>
 
                 <label for="pseudo">Surnom: </label>
-                <input type="password" name="pseudo" id="pseudo" placeholder="MyNickname"><br>
+                <input type="password" name="pseudo" id="pseudo" placeholder="Nickname" required autofocus><br>
 
                 <label for="motdepasse">Password: </label>
                 <input type="password" name="motdepasse" size="12" maxlength="10"><br>
@@ -98,6 +103,10 @@
                         <option value="Opera"></option>
                         <option value="Safari"></option>
                     </datalist><br>
+
+                    <textarea cols="30" rows="4">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, qui voluptatum. Laborum sint officiis dicta eveniet a aspernatur, itaque laboriosam saepe qui doloribus natus quod? Magni assumenda libero rem voluptatibus.
+                    </textarea>
 
                     <button type="submit" value="envoi" formaction="ittaform.html" >Envoyer</button>
                     <button type="submit" value="envoi en GET" formmethod="get">Envoi GET</button>
