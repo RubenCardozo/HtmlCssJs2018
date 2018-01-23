@@ -1,11 +1,30 @@
-@import './reset';
+/*
+import des partials scss
+*/
+@import './partial/reset';
+
+/************************************\
+*  CSS d'exemple 22.01.2018 à ITTA  *
+\************************************/
+/*
+
+= -> exactament égal.
+~ = -> contient le mot.
+| = -> commence par le mot.
+^ = -> commence par.
+$ = -> finie par.
+* = -> contient.
+
+*/
+
 .main{
     background-color: #f3e9cc;
-    width: 200px;
+    width: 300px;
     position: relative;
     margin: 0 auto;
     border-style: solid;
 }
+
 div,p{
     color: blue;
 }
@@ -13,12 +32,23 @@ div,p{
 div>p{
     color:#ee0fee;
 }
+
 div>div>section{
     color:purple;
 }
 
+div ~ p{
+    font-style: italic;
+}
+div + p{
+    font-weight: bold;
+}
+
 .troisieme{
-    color: pink;
+    color: rgb(250, 156, 171);
+    :hover{
+        color:black;
+    }
 }
 
 #quatrieme{
@@ -29,6 +59,77 @@ div>div>section{
 .sixieme{
     color: orange;
     text-decoration: underline;
+}
+[attr1]{
+    font-size: 1.9em;
+}
+[attr1=test2]{
+    font-size: 0.8em;
+}
+
+div div:first-child{
+    background-color: yellow;
+}
+div div:nth-child(2){
+    background-color: lightblue;
+}
+
+div div:last-child{/*nth-last-child(1)*/
+    background-color: aqua;
+}
+div div:nth-last-child(2){
+    font-family: Georgia, sans-serif;
+}
+
+div div:first-of-type{/*nth-of-type(1)*/
+    letter-spacing: 1em;
+}
+
+div div:nth-of-type(2){
+    font-family: Impact, sans-serif;
+}
+
+div div:last-of-type{/*nth-last-of-type(1)*/
+    color: black;
+    font-family: Impact, sans-serif;
+}
+
+div div:nth-last-of-type(2){
+    color: rgb(26, 206, 56);
+    font-family: cursive, sans-serif;
+}
+
+p:only-of-type{
+    font-size: 10px;
+}
+
+p:empty{
+    text-decoration: overline;
+}
+
+:not([attr1]){
+    color: black;
+}
+a{
+    color: black;
+
+    &:link{
+        color: orange;
+    }
+    &:visited{
+        color: red;
+    }
+    a:focus{
+        color: blue;
+        text-decoration: none;
+    }
+
+    &:hover{
+        color: purple;
+    }
+    &:active{
+        color: violet;
+    }
 }
 
 

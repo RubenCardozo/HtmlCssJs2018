@@ -1,3 +1,7 @@
+@charset "UTF-8";
+/*
+import des partials scss
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -19,8 +23,8 @@ time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
-  font-family: impact,sans-serif;
+  font-style: inherit;
+  font-family: arial,sans-serif;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -46,9 +50,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/************************************\
+*  CSS d'exemple 22.01.2018 ├á ITTA  *
+\************************************/
+/*
+
+= -> exactament ├®gal.
+~ = -> contient le mot.
+| = -> commence par le mot.
+^ = -> commence par.
+$ = -> finie par.
+* = -> contient.
+
+*/
 .main {
   background-color: #f3e9cc;
-  width: 200px;
+  width: 300px;
   position: relative;
   margin: 0 auto;
   border-style: solid; }
@@ -62,8 +79,16 @@ div > p {
 div > div > section {
   color: purple; }
 
+div ~ p {
+  font-style: italic; }
+
+div + p {
+  font-weight: bold; }
+
 .troisieme {
-  color: pink; }
+  color: #fa9cab; }
+  .troisieme :hover {
+    color: black; }
 
 #quatrieme {
   color: red;
@@ -72,5 +97,63 @@ div > div > section {
 .sixieme {
   color: orange;
   text-decoration: underline; }
+
+[attr1] {
+  font-size: 1.9em; }
+
+[attr1=test2] {
+  font-size: 0.8em; }
+
+div div:first-child {
+  background-color: yellow; }
+
+div div:nth-child(2) {
+  background-color: lightblue; }
+
+div div:last-child {
+  /*nth-last-child(1)*/
+  background-color: aqua; }
+
+div div:nth-last-child(2) {
+  font-family: Georgia, sans-serif; }
+
+div div:first-of-type {
+  /*nth-of-type(1)*/
+  letter-spacing: 1em; }
+
+div div:nth-of-type(2) {
+  font-family: Impact, sans-serif; }
+
+div div:last-of-type {
+  /*nth-last-of-type(1)*/
+  color: black;
+  font-family: Impact, sans-serif; }
+
+div div:nth-last-of-type(2) {
+  color: #1ace38;
+  font-family: cursive, sans-serif; }
+
+p:only-of-type {
+  font-size: 10px; }
+
+p:empty {
+  text-decoration: overline; }
+
+:not([attr1]) {
+  color: black; }
+
+a {
+  color: black; }
+  a:link {
+    color: orange; }
+  a:visited {
+    color: red; }
+  a a:focus {
+    color: blue;
+    text-decoration: none; }
+  a:hover {
+    color: purple; }
+  a:active {
+    color: violet; }
 
 /*# sourceMappingURL=style.css.map */

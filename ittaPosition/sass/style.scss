@@ -1,0 +1,107 @@
+/*Mes import */
+@import 'reset';
+@import 'variables';
+
+body{
+    background-color: $noir;
+}
+
+body>div:first-child{//première
+    position: relative;
+    //width: 90px;
+    height: 80px;
+    background-color: #e27e97 ;
+}
+body>div:nth-child(2){//deuxième
+    position: relative;
+
+    left: 100px;
+    top: 80px;
+    height: 50px;
+
+    background-color: #b2def3;
+}
+
+body>div:nth-child(3) {//troixième
+    position: fixed;
+    z-index: -10;
+
+    left: 100px;
+    top: 80px;
+    bottom: 80px;
+
+    background-color:#81e967 ;
+}
+
+body>div:nth-child(2)>div:nth-child(1){//quatrième
+    position: absolute;
+
+    left: 100px;
+    top: 80px;
+    height: 80px;
+
+    background-color:#ee8b0a ;
+}
+
+body>div:nth-child(4){//cinquième
+    position: fixed;
+    z-index: 10;
+    height: 80px;
+    width: 100px;
+    left: 150px;
+
+    background-color:#0a52ee ;
+    overflow: auto;
+    
+}
+body>div:nth-child(4){//cinquième
+    position: fixed;
+    z-index: 10;
+    height: 80px;
+    width: 100px;
+    left: 150px;
+    background-color:#0a52ee ;
+    overflow: auto;  
+}
+img:first-child{//image de titi est dans le paragraphe p
+    padding: 10px;
+    
+    width: 150px;
+    float: left;
+}
+img:nth-child(2){//image de chien est dans le paragraphe p
+    padding:10px;
+    width: 100px;
+    float: right;
+}
+
+p {
+    padding: 10px;
+    position: relative ;
+    top: 150px ;
+    background-color: #f1b7b7;
+    text-align: justify;
+    overflow: hidden;
+    //font-size: 20px;
+}
+
+article{//Article qui englobe les deux sections
+    position: relative;
+    top: 150px;
+}
+
+section:first-child{//Première section
+    float: left;
+    width: 250px;
+    //height: 150px;
+    background-color: #e3f0aa;
+    
+}
+section:nth-child(2){//Deuxième section
+    float: right;
+    width: 250px;
+    //height: 150px;
+    background-color: #aaf0ec;
+    clear: left;
+}
+
