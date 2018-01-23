@@ -1,0 +1,24 @@
+body {
+  background-color: #fdfcf7; }
+
+li {
+  display: inline; }
+
+span {
+  display: block; }
+
+div {
+  background-color: #f3e8aa;
+  display: none; }
+
+div ~ div {
+  background-color: #8496e6;
+  visibility: hidden;
+  display: inherit; }
+
+div:nth-of-type(3) {
+  visibility: inherit;
+  opacity: 0;
+  background-color: #ee8686; }
+
+/*# sourceMappingURL=style.css.map */

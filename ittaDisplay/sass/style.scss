@@ -1,0 +1,26 @@
+body{
+    background-color: #fdfcf7;
+}
+li{
+    display: inline;
+}
+
+span{
+    display: block;
+}
+
+div{
+    background-color: rgb(243, 232, 170);
+    display: none;
+}
+div~div{
+    background-color: rgb(132, 150, 230);
+    visibility: hidden;
+    display: inherit;
+}
+
+div:nth-of-type(3){ 
+    visibility: inherit;
+    opacity: 0;
+    background-color: rgb(238, 134, 134);
+}
