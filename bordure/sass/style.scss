@@ -24,5 +24,54 @@
     //margin:         15px 25px 10px;   //top:        15 bottom:        10px, right+left: 25px;
     margin:           25px 25px 0;     //top:         25px, bottom:     0, right+left:    -25px;;
     padding:          20px;
-    height:           60px;
+    border:           30px solid $gris;
+    height:           100px;
+
+}
+#bord{
+    border-width:     10px;
+    border-style:     solid;
+    border-color:     #f10;
+    background-color: $blueClaire;
+    //background-color:#ff0000;
+    //background-color:rgb(255, 0, 0);
+    //background-color:hsl(0, 100%, 50%);
+    //background-color:rgba(255, 0, 0, 0.8);
+    //background-color:hsla(200, 100%, 50%, 0.8);
+    border-radius: 20px 0 20px 0;
+}
+#fond{
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+
+    border: {
+        width: 50px;
+        color: rgba(0,255,0,0.5);
+        style: solid;
+        
+    }
+
+    background: {
+        image: url('/images/chien.jpg');
+        color: rgba(0,255,0,0.5);
+        size: 40%;
+        repeat: nrepeat;
+        position: left bottom;
+        origin: border-box;
+        clip: text; 
+    }
+    // background-color: $gris;
+    // background-image: url('/images/chien.jpg');
+    // background-size: 40%;
+    // background-repeat: no-repeat;
+    // background-position: center;
+}
+
+#psyche{ 
+    //background: repeating-linear-gradient(-45deg, transparent,transparent 5px,$blue 40px, $blue 30px);
+    width: 400px;
+    //background: radial-gradient(ellipse at bottom, $jaune, $orange, $rouge);
+    background: radial-gradient(closest-side at 30% 50%, $jaune 40%, $orange 40%, $rouge, $blueClaire); 
+    height: 170px;
 }

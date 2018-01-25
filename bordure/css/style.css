@@ -21,45 +21,85 @@ time, mark, audio, video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  vertical-align: baseline; }
+  vertical-align: baseline;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block; }
+  display: block;
+}
 
 body {
-  line-height: 1; }
+  line-height: 1;
+}
 
 ol, ul {
-  list-style: none; }
+  list-style: none;
+}
 
 blockquote, q {
-  quotes: none; }
+  quotes: none;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none; }
+  content: none;
+}
 
 table {
   border-collapse: collapse;
-  border-spacing: 0; }
+  border-spacing: 0;
+}
 
 #main {
   width: 500px;
-  background-color: #c5f1f7;
-  margin: auto; }
+  background-color: #98f7f7;
+  margin: auto;
+}
 
 .title {
   font-size: 20px;
   text-align: center;
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 #interne {
   background-color: #f7bfbf;
   margin: 25px 25px 0;
   padding: 20px;
-  height: 60px; }
+  border: 30px solid #d1caca;
+  height: 100px;
+}
 
+#bord {
+  border-width: 10px;
+  border-style: solid;
+  border-color: #f10;
+  background-color: #98f7f7;
+  border-radius: 20px 0 20px 0;
+}
+
+#fond {
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  border-width: 50px;
+  border-color: rgba(0, 255, 0, 0.5);
+  border-style: solid;
+  background-image: url("/images/chien.jpg");
+  background-color: rgba(0, 255, 0, 0.5);
+  background-size: 40%;
+  background-repeat: nrepeat;
+  background-position: left bottom;
+  background-origin: border-box;
+  background-clip: text;
+}
+
+#psyche {
+  width: 400px;
+  background: radial-gradient(closest-side at 30% 50%, #f5f0c0 40%, #eec658 40%, #f8455d, #98f7f7);
+  height: 170px;
+}
 /*# sourceMappingURL=style.css.map */
