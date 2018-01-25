@@ -1,4 +1,4 @@
-/*imports*/
+/*IMPORTS*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -53,52 +53,71 @@ table {
   border-spacing: 0;
 }
 
-#main {
-  width: 500px;
-  background-color: #98f7f7;
-  margin: auto;
+body {
+  background-color: #f5f0c0;
 }
 
-.title {
-  font-size: 20px;
-  text-align: center;
-  text-decoration: underline;
-}
-
-#interne {
-  background-color: #f7bfbf;
-  margin: 25px 25px 0;
-  padding: 20px;
-  border: 30px solid #d1caca;
+.menu {
+  float: left;
+  margin-top: -60px;
   height: 100px;
+  position: fixed;
+  left: 25%;
+  font-size: 20px;
 }
 
-#bord {
-  border-width: 10px;
-  border-style: solid;
-  border-color: #f10;
-  background-color: #98f7f7;
-  border-radius: 20px 0 20px 0;
+.menu:hover {
+  margin-top: 0px;
 }
 
-#fond {
-  width: 250px;
-  margin: 20px;
-  padding: 20px;
-  border-width: 50px;
-  border-color: rgba(0, 255, 0, 0.5);
-  border-style: solid;
-  background-image: url("/images/chien.jpg");
-  background-color: rgba(0, 255, 0, 0.5);
-  background-size: 40%;
-  background-repeat: nrepeat;
-  background-position: left bottom;
-  background-origin: border-box;
-  background-clip: text;
+.menu ul {
+  background-color: #f8455d;
 }
 
-#psyche {
-  width: 400px;
-  background: radial-gradient(closest-side at 30% 50%, #f5f0c0 40%, #eec658 40%, #f8455d, #98f7f7);
+li {
+  margin: 5px;
+  list-style: none;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+}
+
+li:first-child {
+  width: 150px;
+  background-color: #ee9696;
+}
+
+li:nth-child(2) {
+  width: 150px;
+  background-color: #c0ee96;
+}
+
+li:nth-child(3) {
+  width: 150px;
+  background-color: #6b9ed8;
+}
+
+li:nth-child(4) {
+  width: 150px;
+  background-color: #9b7131;
+}
+
+li:hover {
+  border-radius: 5px;
+  color: #f5f0c0;
+  background-color: #000000;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f5f0c0;
+}
+
+.para {
+  width: 50px;
 }
 /*# sourceMappingURL=style.css.map */

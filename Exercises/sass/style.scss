@@ -1,0 +1,71 @@
+/*IMPORTS*/
+@import '_reset.scss';
+@import '_variables.scss';
+
+body{
+    background-color: $jaune;
+}
+
+.menu{ 
+    float:left;
+
+    margin-top: -60px;
+    height: 100px;
+
+    position: fixed;
+    left: 25%;
+    font-size: 20px;
+
+}
+.menu:hover{
+    margin-top: 0px;
+}
+.menu ul{
+    background-color:$rouge;
+}
+
+li{
+    margin:5px;
+    list-style: none;
+    border-radius:5px; 
+    display: inline-block;
+    text-align: center;
+}
+
+li:first-child{
+    width: 150px;
+    background-color: rgb(238, 150, 150);
+    
+}
+li:nth-child(2){
+    width: 150px;
+    background-color: rgb(192, 238, 150);
+}
+li:nth-child(3){
+    width: 150px;
+    background-color: rgb(107, 158, 216);
+}
+li:nth-child(4){
+    width: 150px;
+    background-color: rgb(155, 113, 49); 
+}
+li:hover{
+    //visibility: hidden;
+    border-radius:5px;
+    color: $jaune;
+    background-color: $noir;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: $jaune;
+}
+
+.para{
+    width: 50px;
+}
+

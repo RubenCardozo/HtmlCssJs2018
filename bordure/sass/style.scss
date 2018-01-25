@@ -60,6 +60,7 @@
         position: left bottom;
         origin: border-box;
         clip: text; 
+        //radial-gradient (closest-side at 30% 50%, $jaune 40%, $orange 40%, $rouge, $blueClaire);
     }
     // background-color: $gris;
     // background-image: url('/images/chien.jpg');
@@ -73,5 +74,5 @@
     width: 400px;
     //background: radial-gradient(ellipse at bottom, $jaune, $orange, $rouge);
     background: radial-gradient(closest-side at 30% 50%, $jaune 40%, $orange 40%, $rouge, $blueClaire); 
-    height: 170px;
+
 }
