@@ -76,3 +76,13 @@
     background: radial-gradient(closest-side at 30% 50%, $jaune 40%, $orange 40%, $rouge, $blueClaire); 
 
 }
+#dimension{
+    width: 50pc;
+    font-size: 4ch;
+    background-color: $blue;
+}
+#dimension div{
+    background-color: $blueClaire;
+    font-size: 1rem;
+}
+

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ITTTris</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="styles/css_reset.css">
+		<style type="text/css">
+			h1 {
+				font-size: 42px;
+				color: white;
+				display: inline-block;
+				position: relative;
+			}
+			#itttris {
+				width: 800px;
+				height: 600px;
+				background-color: #444444;
+				padding: 1px;
+			}
+			#game {
+				width: 320px;
+				height: 544px;
+				margin: 20px;
+				background-color: #AAAAAA;
+				display: inline-block;
+			}
+			.full-block {
+				position: relative;
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+				padding: 0;
+				margin: 0;
+				flex-grow: 0;
+				flex-shrink: 0;
+				background-color: black;
+			}
+			.empty-block {
+				position: relative;
+				display: inline-block;
+				width: 32px;
+				height: 32px;
+				padding: 0;
+				margin: 0;
+			}
+			
+			.piece {
+				position: absolute;			
+				padding: 0;
+				padding-top: 21px;
+				margin: 0;
+				display: inline-flex;
+				flex-wrap: wrap;
+			}
+			
+			.square {
+				width: 64px;
+				height: 64px;
+			}
+			.S {
+				width: 96px;
+				height: 64px;
+			}
+			.Z {
+				width: 96px;
+				height: 64px;
+			}
+			.line {
+				width: 32px;
+				height: 128px;
+			}
+			.T {
+				width: 96px;
+				height: 64px;
+			}
+			.L {
+				width: 64px;
+				height: 96px;
+			}
+			.reverse-L {
+				width: 64px;
+				height: 96px;
+			}
+		</style>
+		<script>
+			var cur_piece = null;
+			var piece_nb = 1;
+			var pieces = [
+				{shape: ['.','.','.','.'],block_class: 'line',color: 'yellow'},
+				{shape: ['..','..'],block_class: 'square',color: 'red'},
+				{shape: ['...',' . '],block_class: 'T',color: 'green'},
+				{shape: ['..',' .',' .'],block_class: 'L',color: 'blue'},
+				{shape: ['..','. ','. '],block_class: 'reverse-L',color: 'lightblue'},
+				{shape: ['.. ',' ..'],block_class: 'Z',color: 'magenta'},
+				{shape: [' ..','.. '],block_class: 'S',color: 'violet'},
+			];
+			
+			function generatePiece() {
+				var r = Math.round(Math.random() * 100 % pieces.length);
+				var next = {
+					shape: pieces[r].shape
+				};
+				next.x = 320 / 2 - (32 * next.shape[0].length / 2);
+				next.x -= next.x % 32;
+				next.y = 0;
+				next.is_placed = false;
+				next.type = r;
+				next.id = piece_nb++;
+				var html = '';
+				html += '<div id="piece_'+next.id+'" class="piece '+pieces[next.type].block_class+'">';
+				for (var i = 0; i < next.shape.length; i++) {
+					for (var j = 0; j < next.shape[i].length; j++) {
+						html +=	'<div class="'+(next.shape[i][j] == '.' ? 'full-block' : 'empty-block')+'"></div>';
+					}
+				}
+				html += '</div>';
+				next.createdHtml = html;
+				return next;
+			}
+			function update() {
+				if ($('#game #piece_'+cur_piece.id).length) {
+					if (cur_piece.y + 32 + $('#game #piece_'+cur_piece.id).height() > $('#game').height()) {
+						cur_piece.is_placed = true;
+					} else {
+						cur_piece.y += 32;
+					}
+				} else {
+					$('#game').append(cur_piece.createdHtml);
+					$('#game #piece_'+cur_piece.id+' .full-block').css('background-color', pieces[cur_piece.type].color);
+				}
+			}
+			function render() {
+				$('#game #piece_'+cur_piece.id).css('left', cur_piece.x);
+				$('#game #piece_'+cur_piece.id).css('top', cur_piece.y);
+			}
+			function tick() {
+				if (cur_piece == null)
+					cur_piece = generatePiece();
+				update();
+				render();
+				if (cur_piece.is_placed == true)
+					cur_piece = null;
+			}
+			$(document).ready(function() {
+				setInterval(tick, 500);
+			});
+		</script>
+	</head>
+	<body>
+		<div id="itttris">
+			<div id="game"></div>
+			<h1>ITT-TRIS</h1>
+		</div>
+	</body>
+</html>

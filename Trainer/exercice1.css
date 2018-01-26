@@ -1,0 +1,57 @@
+﻿nav {
+    width: 100%;
+    padding: 0px 10px;
+}
+
+
+    nav li {
+        list-style-type: none;
+        float: left;
+        border-top: 5px solid black;
+        border-bottom: 1px solid black;
+        border-left: 2px double black;
+    }
+
+        nav li:hover {
+            border-top-color: grey;
+        }
+
+    nav a {
+        text-decoration: none;
+        font-family: arial, sans-serif;
+        color: black;
+        padding: 20px 30px;
+    }
+
+#flex {
+    background-color: green;
+}
+
+    #flex:hover {
+        background-color: darkgreen;
+    }
+
+#position {
+    background-color: blue;
+}
+
+    #position:hover {
+        background-color: darkblue;
+    }
+
+#learncss {
+    background-color: orange;
+}
+
+    #learncss:hover {
+        background-color: darkorange;
+    }
+
+#exercice1 {
+    border-right: 2px double black;
+    background-color: violet;
+}
+
+    #exercice1:hover {
+        background-color: darkviolet;
+    }
